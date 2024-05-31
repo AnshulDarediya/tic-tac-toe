@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root{
+ width: 100vw;
+ min-height: 100vh;
+ background-color: bisque;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading img{
+  height: 10vh;
+}
+.players{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.players input{
+  padding: 4px;
+  margin: 4px;
+}
+.players label{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.players button{
+  width: 4vw;
+  padding: 2px;
+  border-radius: 2px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+#game-board ol {
+  list-style-type:none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#game-board button {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  border: 2px solid black;
+  background: hsl(60, 76%, 40%);
+  color: #3f3b00;
+  font-size: 5rem;
+  cursor: pointer;
+  font-family: 'Caprasimo', cursive;
+  padding: 1rem;
+}
+
+.active{
+  border: 3px solid rgb(118, 193, 53);
+}
+
+.player{
+  padding: 10px;
+  margin: 5px;
+  background-color: azure;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.status button{
+  margin: 2px;
+  padding: 2px;
+}
+
+.log{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+}
+
+.log button{
+  margin: 2px;
+  padding : 2px;
 }
